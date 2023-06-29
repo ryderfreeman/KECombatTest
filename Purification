@@ -1,0 +1,334 @@
+local PURIFICATION = Instance.new("ScreenGui")
+PURIFICATION.Enabled = false
+local Main = Instance.new("Frame")
+local Bar = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local ActualBar = Instance.new("Frame")
+local Line = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Line_2 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Line_3 = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Line_4 = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local Line_5 = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local Line_6 = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local Line_7 = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local Line_8 = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--Properties:
+
+PURIFICATION.Name = "PURIFICATION"
+PURIFICATION.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+PURIFICATION.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = PURIFICATION
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.271320015, 0, 0.0481517538, 0)
+Main.Size = UDim2.new(0, 560, 0, 67)
+
+Bar.Name = "Bar"
+Bar.Parent = Main
+Bar.BackgroundColor3 = Color3.fromRGB(163, 35, 255)
+Bar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Bar.Position = UDim2.new(0, 0, 0.829999983, 0)
+Bar.Size = UDim2.new(0, 560, 0, 17)
+
+TextLabel.Parent = Bar
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(1, 0, 1, 0)
+TextLabel.ZIndex = 2
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "COUNTDOWN ERROR"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextWrapped = true
+
+ActualBar.Name = "ActualBar"
+ActualBar.Parent = Main
+ActualBar.BackgroundColor3 = Color3.fromRGB(64, 14, 102)
+ActualBar.BorderColor3 = Color3.fromRGB(64, 14, 102)
+ActualBar.BorderSizePixel = 2
+ActualBar.Position = UDim2.new(0, 0, 0.829999983, 0)
+ActualBar.Size = UDim2.new(0, 560, 0, 17)
+ActualBar.ZIndex = 0
+
+Line.Name = "Line"
+Line.Parent = Main
+Line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line.BorderSizePixel = 0
+Line.Position = UDim2.new(0, 0, -0.0895522386, 0)
+Line.Size = UDim2.new(0, 20, 0, 3)
+Line.ZIndex = 3
+
+UICorner.CornerRadius = UDim.new(0, 1)
+UICorner.Parent = Line
+
+Line_2.Name = "Line"
+Line_2.Parent = Main
+Line_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line_2.BorderSizePixel = 0
+Line_2.Position = UDim2.new(0, 0, -0.0895522386, 0)
+Line_2.Size = UDim2.new(0, 3, 0, 23)
+Line_2.ZIndex = 3
+
+UICorner_2.CornerRadius = UDim.new(0, 1)
+UICorner_2.Parent = Line_2
+
+Line_3.Name = "Line"
+Line_3.Parent = Main
+Line_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line_3.BorderSizePixel = 0
+Line_3.Position = UDim2.new(1, 0, -0.0447761193, 0)
+Line_3.Size = UDim2.new(0, 3, 0, 23)
+Line_3.ZIndex = 3
+
+UICorner_3.CornerRadius = UDim.new(0, 1)
+UICorner_3.Parent = Line_3
+
+Line_4.Name = "Line"
+Line_4.Parent = Main
+Line_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line_4.BorderSizePixel = 0
+Line_4.Position = UDim2.new(0.964285731, 0, -0.0447761193, 0)
+Line_4.Size = UDim2.new(0, 20, 0, 3)
+Line_4.ZIndex = 3
+
+UICorner_4.CornerRadius = UDim.new(0, 1)
+UICorner_4.Parent = Line_4
+
+Line_5.Name = "Line"
+Line_5.Parent = Main
+Line_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line_5.BorderSizePixel = 0
+Line_5.Position = UDim2.new(0.964285731, 0, 0.731343269, 0)
+Line_5.Size = UDim2.new(0, 20, 0, 3)
+Line_5.ZIndex = 3
+
+UICorner_5.CornerRadius = UDim.new(0, 1)
+UICorner_5.Parent = Line_5
+
+Line_6.Name = "Line"
+Line_6.Parent = Main
+Line_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line_6.BorderSizePixel = 0
+Line_6.Position = UDim2.new(1, 0, 0.432835847, 0)
+Line_6.Size = UDim2.new(0, 3, 0, 23)
+Line_6.ZIndex = 3
+
+UICorner_6.CornerRadius = UDim.new(0, 1)
+UICorner_6.Parent = Line_6
+
+Line_7.Name = "Line"
+Line_7.Parent = Main
+Line_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line_7.BorderSizePixel = 0
+Line_7.Position = UDim2.new(0, 0, 0.731343269, 0)
+Line_7.Size = UDim2.new(0, 20, 0, 3)
+Line_7.ZIndex = 3
+
+UICorner_7.CornerRadius = UDim.new(0, 1)
+UICorner_7.Parent = Line_7
+
+Line_8.Name = "Line"
+Line_8.Parent = Main
+Line_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Line_8.BorderSizePixel = 0
+Line_8.Position = UDim2.new(0, 0, 0.388059705, 0)
+Line_8.Size = UDim2.new(0, 3, 0, 23)
+Line_8.ZIndex = 3
+
+UICorner_8.CornerRadius = UDim.new(0, 1)
+UICorner_8.Parent = Line_8
+
+TextLabel_2.Parent = Main
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Size = UDim2.new(0, 560, 0, 50)
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Text = "..."
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 35.000
+TextLabel_2.TextWrapped = true
+
+local sound1 = Instance.new("Sound")
+sound1.Parent = game.Workspace
+sound1.Volume = 3
+sound1.Name = "IntroPURIFY"
+sound1.SoundId = "rbxassetid://644569768"
+local sound2 = Instance.new("Sound")
+sound2.Parent = game.Workspace
+sound2.Volume = 0.4
+sound2.Name = "SirenPURIFY"
+sound2.SoundId = "rbxassetid://6525690145"
+local soundnuke = Instance.new("Sound")
+soundnuke.Parent = game.Workspace
+soundnuke.Volume = 1.4
+soundnuke.Name = "NukePURIFY"
+soundnuke.SoundId = "rbxassetid://923073285"
+local soundpowerdown = Instance.new("Sound")
+soundpowerdown.Parent = game.Workspace
+soundpowerdown.Volume = 1.7
+soundpowerdown.Name = "PowerDown"
+soundpowerdown.SoundId = "rbxassetid://8316701225"
+
+local text1 = Instance.new("TextLabel")
+text1.Text = "The air smells.. odd.."
+text1.Size = UDim2.new(1,0,1,0)
+text1.TextSize = 22
+text1.TextColor3 = Color3.fromRGB(255, 156, 16)
+text1.Font = Enum.Font.SourceSansBold
+text1.RichText = true
+text1.Parent = game.Players.LocalPlayer.PlayerGui
+text1.TextStrokeTransparency = 0.5
+text1.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+text1.BackgroundTransparency = 1
+text1.Name = "PURIFY_TEXT_1"
+
+local text2 = Instance.new("TextLabel")
+text2.Text = "It's not safe here, I need to find a way out.. before it's too late."
+text2.Size = UDim2.new(1,0,1,0)
+text2.TextSize = 22
+text2.Name = "PURIFY_TEXT_2"
+text2.TextColor3 = Color3.fromRGB(255, 156, 16)
+text2.Font = Enum.Font.SourceSansBold
+text2.RichText = true
+text2.Parent = game.Players.LocalPlayer.PlayerGui
+text2.TextStrokeTransparency = 0.5
+text2.TextStrokeColor3 = Color3.fromRGB(0,0,0)
+text2.BackgroundTransparency = 1
+
+
+local button = Instance.new("TextButton")
+
+local gui = Instance.new("ScreenGui")
+gui.Name = "PURIFY_GUI"
+gui.Parent = game.Players.LocalPlayer.PlayerGui
+button.Size = UDim2.new(0.154, 0,0.102, 0)
+button.Position = UDim2.new(0,0,0,0)
+button.BackgroundTransparency = 0.8
+button.Parent = gui
+button.TextScaled = true
+button.TextColor3 = Color3.fromRGB(255,255,255)
+button.TextStrokeTransparency = 0
+button.TextStrokeColor3 = Color3.new(0,0,0)
+button.Text = "START EVENT"
+button.Modal = true
+
+local cd = false
+
+--- // FUNCTIONS \\ ---
+button.MouseButton1Click:Connect(function()
+	if cd == false then
+		cd = true
+        game.Lighting.FogEnd = 200
+		game.Lighting.Ambient = Color3.fromRGB(120,120,120)
+		game.Lighting.FogColor = Color3.fromRGB(60,60,60)
+		button.Text = "STARTED, WAIT 3 SECONDS."
+		wait(0.1)
+		sound1:Play()
+		 game.Lighting.FogEnd = 495
+		text1.Parent = game.Players.LocalPlayer.PlayerGui:WaitForChild("gameplay").TextUi
+		wait(1.6)
+		PURIFICATION.Enabled = true
+		text2.Parent = game.Players.LocalPlayer.PlayerGui:WaitForChild("gameplay").TextUi
+		wait(5)
+		soundpowerdown:Play()
+		TextLabel_2.Text = "THE END IS NEAR"
+		text1:Destroy()
+		text2:Destroy()
+		gui:Destroy()
+		sound1:Destroy()
+		game.Workspace:WaitForChild("Ambient").EventTheme.NotEnoughTime:Play()
+		game.Workspace:WaitForChild("Ambient").EventTheme.NotEnoughTime.Looped = false
+		for i,lights in pairs(game.Workspace:WaitForChild("Map"):GetDescendants()) do
+			if lights:IsA("PointLight") then
+				lights.Enabled = false
+			end
+		end
+		for i,prop in pairs(game.Workspace:WaitForChild("Scripted").TransformBrick.Crystals:GetDescendants()) do
+			if prop.Name == "Crystal" or prop.Name == "Base" then
+				prop.Color = Color3.fromRGB(255, 103, 33)
+			end
+		end
+		game.Lighting.FogColor = Color3.fromRGB(255, 136, 39)
+		game.Lighting.Ambient = Color3.fromRGB(10,10,10)
+		game.Lighting.ClockTime = 0
+		game.Lighting.FogEnd = 700
+		wait(67)
+		sound1:Destroy()
+		soundpowerdown:Destroy()
+			TextLabel_2.Text = "THE NUCLEAR BOMBS HAVE BEEN RELEASED"
+		TextLabel_2.TextScaled = true
+		sound2:Play()
+		wait(52)
+			TextLabel_2.Text = ". . ."
+		game.Workspace:WaitForChild("Ambient").EventTheme.NotEnoughTime:Stop()
+		game.Workspace:WaitForChild("Ambient").EventTheme.NotEnoughTime.Looped = true
+		soundnuke:Play()
+		wait(0.2)
+		game.Lighting.Brightness = 2
+		wait(0.1)
+		game.Lighting.Brightness = 4
+		wait(0.1)
+		game.Lighting.Ambient = Color3.fromRGB(60,60,60)
+		game.Lighting.Brightness = 6
+		wait(0.1)
+		game.Lighting.Brightness = 8
+		game.Lighting.Ambient = Color3.fromRGB(130,130,130)
+		wait(0.1)
+		game.Lighting.Brightness = 15
+		wait(0.1)
+		game.Lighting.Ambient = Color3.fromRGB(255,255,255)
+		game.Lighting.Brightness = 70
+		wait(0.1)
+		game.Lighting.Ambient = Color3.fromRGB(2555, 2555, 2555)
+		game.Lighting.Brightness = 100000
+        game.Lighting.FogEnd = 100
+        game.Lighting.FogColor = Color3.fromRGB(255,255,255)
+		wait(10)
+		sound2:Destroy()
+		soundnuke:Destroy()
+		PURIFICATION:Destroy()
+			game.Lighting.ClockTime = 9
+		game.Lighting.Brightness = 1
+		game.Lighting.Ambient = Color3.fromRGB(120,120,120)
+		for i,lights in pairs(game.Workspace:WaitForChild("Map"):GetDescendants()) do
+			if lights:IsA("PointLight") then
+				lights.Enabled = true
+			end
+		end
+		for i,prop in pairs(game.Workspace:WaitForChild("Scripted").TransformBrick.Crystals:GetDescendants()) do
+			if prop.Name == "Crystal" or prop.Name == "Base" then
+				prop.Color = Color3.fromRGB(9, 137, 207)
+			end
+		end
+		game.Lighting.FogColor = Color3.fromRGB(60,60,60)
+        game.Lighting.FogEnd = 495
+	end
+end)
