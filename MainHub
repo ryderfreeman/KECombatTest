@@ -1,0 +1,338 @@
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+
+local Window = Rayfield:CreateWindow({
+	Name = "stupid KE exploit",
+	LoadingTitle = "stupid KE exploit",
+	LoadingSubtitle = "made by me",
+	ConfigurationSaving = {
+		Enabled = false,
+		FolderName = nil, -- Create a custom folder for your hub/game
+		FileName = "1771717t26g276277g127t476t17t47t21g4g5g1261253672185"
+	},
+        Discord = {
+        	Enabled = false,
+        	Invite = "pqMgjdEy", -- The Discord invite code, do not include discord.gg/
+        	RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+        },
+	KeySystem = false, -- Set this to true to use our key system
+	KeySettings = {
+		Title = "[MESSAGE] Ry's Personal Hub KEY",
+		Subtitle = "Key required to use script! [KEY CHANGES EVERY UPDATE!]",
+		Note = "Ask Ryder for the Key (ry#8844)",
+		SaveKey = true,
+		GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+		Key = "rywashere"
+	}
+})
+
+
+
+
+local Tab = Window:CreateTab("main", 10590477450)
+
+
+local Button = Tab:CreateButton({
+	Name = "infstamina",
+	Callback = function()
+		while wait(0.06) do
+		game.Players.LocalPlayer.Character.Stats.Stamina.Value = 100
+		end
+    end,
+})
+local Button = Tab:CreateButton({
+	Name = "text",
+	Callback = function()
+
+    end,
+})
+local Button = Tab:CreateButton({
+	Name = "infyield",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+    end,
+})
+local Button = Tab:CreateButton({
+	Name = "remove water hitbox",
+	Callback = function()
+workspace["UNCODED Water Hitbox"].MediumWater:Destroy()
+    end,
+})
+local Button = Tab:CreateButton({
+	Name = "Destroy Nametag",
+	Callback = function()
+-- Destroys Your nametag in KE (Client Sided)
+game.Players.LocalPlayer.Character.Head:WaitForChild("NameTag"):Destroy()
+    end,
+})
+local Button = Tab:CreateButton({
+	Name = "Template Char [For Hiding your avatar.]",
+	Callback = function()
+for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+if v:IsA("Accessory")
+then v:Destroy()
+end
+end
+game.Players.LocalPlayer.Character:WaitForChild("Body Colors"):Destroy()
+if game.Players.LocalPlayer.Character:FindFirstChild("Shirt") then game.Players.LocalPlayer.Character.Shirt:Destroy() end
+if game.Players.LocalPlayer.Character:FindFirstChild("Pants") then game.Players.LocalPlayer.Character.Pants:Destroy() end
+wait(0.1)
+for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+if v:IsA("Part")
+then v.Color = Color3.fromRGB(163, 162, 165)
+end
+end
+game.Players.LocalPlayer.Character.Torso.Color = Color3.fromRGB(115, 115, 115)
+    end,
+})
+local Button = Tab:CreateButton({
+	Name = "Banana Cat Cursor",
+	Callback = function()
+local cursor = Instance.new("ImageLabel")
+local cursorgui = game.Players.LocalPlayer.PlayerGui:WaitForChild("CURSOR")
+cursor.Name = "FunyCursor"
+cursor.Parent = cursorgui.ToolCursor
+cursor.Size = UDim2.new(0.099, 0, 0.099, 0)
+cursor.Position = UDim2.new(0.5, 0, 0.5, 0)
+cursor.AnchorPoint = Vector2.new(0.5, 0.5)
+cursor.Image = "http://www.roblox.com/asset/?id=5009915795"
+cursorgui.ToolCursor.center.Visible = false
+cursor.Visible = true
+cursor.Rotation = 45
+cursor.BackgroundColor3 = Color3.fromRGB(255,255,255)
+-- cursorgui.ToolCursor.Size = UDim2.new(0.2, 0, 0.2, 0)
+cursorgui.ToolCursor.Size = UDim2.new(0.1, 0, 0.1, 0)
+    end,
+})
+local Button = Tab:CreateButton({
+	Name = "purification",
+	Callback = function()
+
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ryderfreeman/KECombatTest/main/Purification'))()
+    end,
+})
+
+local Keybind = Tab:CreateKeybind({
+   Name = "wtf SQ Arbiter from DW??!?!",
+   CurrentKeybind = "Z",
+   HoldToInteract = false,
+   Flag = "SQKB1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(SQKey)
+local Character=script.Parent
+local moveto=Instance.new("BodyPosition")
+moveto.D = 9
+moveto.Name = "Two"
+moveto.MaxForce = Vector3.new(100000000,100000000,100000000)
+moveto.P = 100
+moveto.Position = Vector3.new(100000000,100000000,100000000)
+local plrchar = game.Players.LocalPlayer.Character
+local one = Instance.new("BodyVelocity")
+one.P = 1250
+one.Name = "one"
+one.MaxForce = Vector3.new(0,10000000,0)
+function disable()
+	script.Disabled=true
+end
+wait(0.01)
+local oldplayerpos = plrchar.HumanoidRootPart.Position
+	wait(0.1)
+	plrchar.HumanoidRootPart.CFrame = plrchar.HumanoidRootPart.CFrame * CFrame.new(0, 1, 0)
+	wait()
+	plrchar.HumanoidRootPart.CFrame = plrchar.HumanoidRootPart.CFrame * CFrame.new(0, 2, 0)
+	wait()
+	plrchar.HumanoidRootPart.CFrame = plrchar.HumanoidRootPart.CFrame * CFrame.new(0, 3, 0)
+	wait()
+	plrchar.HumanoidRootPart.CFrame = plrchar.HumanoidRootPart.CFrame * CFrame.new(0, 30, 0)
+	wait()
+	one:Clone().Parent=plrchar.Torso
+	wait(.5)
+	plrchar.Torso:FindFirstChild("one"):Destroy()
+	local moveto2=moveto:Clone()
+	moveto2.Position=oldplayerpos
+	wait()
+	moveto2.Parent=plrchar.Torso
+	wait(.5)
+	wait(.5)
+	moveto2:Destroy()
+	wait(60)
+
+
+   end,
+})
+local Keybind = Tab:CreateKeybind({
+   Name = "sledge queen arbiter but it doesnt tp yo",
+   CurrentKeybind = "X",
+   HoldToInteract = false,
+   Flag = "SQKB1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(SQKey)
+local Character=script.Parent
+local moveto=Instance.new("BodyPosition")
+moveto.D = 9
+moveto.Name = "Two"
+moveto.MaxForce = Vector3.new(100000000,100000000,100000000)
+moveto.P = 100
+moveto.Position = Vector3.new(100000000,100000000,100000000)
+local plrchar = game.Players.LocalPlayer.Character
+local one = Instance.new("BodyVelocity")
+one.P = 1250
+one.Name = "one"
+one.MaxForce = Vector3.new(0,10000000,0)
+function disable()
+	script.Disabled=true
+end
+wait(0.01)
+local oldplayerpos = plrchar.HumanoidRootPart.Position
+	wait(0.1)
+	plrchar.HumanoidRootPart.CFrame = plrchar.HumanoidRootPart.CFrame * CFrame.new(0, 1, 0)
+	wait()
+	plrchar.HumanoidRootPart.CFrame = plrchar.HumanoidRootPart.CFrame * CFrame.new(0, 2, 0)
+	wait()
+	plrchar.HumanoidRootPart.CFrame = plrchar.HumanoidRootPart.CFrame * CFrame.new(0, 3, 0)
+	wait()
+	plrchar.HumanoidRootPart.CFrame = plrchar.HumanoidRootPart.CFrame * CFrame.new(0, 30, 0)
+	wait()
+	one:Clone().Parent=plrchar.Torso
+	wait(.5)
+	plrchar.Torso:FindFirstChild("one"):Destroy()
+	wait(.5)
+	wait(.5)
+	wait(60)
+
+
+   end,
+})
+local Keybind = Tab:CreateKeybind({
+	Name = "sledge queen but goes to mouse",
+	CurrentKeybind = "V",
+	HoldToInteract = false,
+	Flag = "SQKB2", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(SQKey2)
+if cooldown == false then
+    cooldown = true
+local lp = game.Players.LocalPlayer
+local gui = lp.PlayerGui
+local rs = game.ReplicatedStorage
+local ms = lp:GetMouse()
+wait(0.1)
+local hitpos = ms.hit.Position
+wait(0.3)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0,100,0)
+wait(0.4)
+local bp = Instance.new("BodyPosition",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)
+bp.MaxForce = Vector3.new(10000000,10000000,10000000)
+bp.P = 50
+bp.D = 0
+bp.Position = hitpos
+wait(0.4)
+bp:Destroy()
+wait(0.4)
+cooldown = false
+end
+	end,
+ })
+ 
+ local Tab = Window:CreateTab("cosmetic/skins", 10590477450)
+ 
+ local Button = Tab:CreateButton({
+	Name = "Blade of the Dusekkar: Machete Skin",
+	Callback = function()
+---MACHETE SKIN FOR KE---
+
+local machete = game.Players.LocalPlayer.Character:WaitForChild("Machete")
+machete.Model.BasePart.Hit.SoundId = "http://www.roblox.com/asset/?id=62777535"
+machete.Model.BasePart.Hit.PlaybackSpeed = 0.5
+machete.Model.BasePart.Swing.SoundId = "rbxassetid://3939935996"
+machete.Model.BasePart.Swing.TimePosition = 0
+machete.Model.BasePart.Swing.Volume = 1.3
+if machete.Model.TZB_Machete:FindFirstChild("SurfaceAppearance") then machete.Model.TZB_Machete:WaitForChild("SurfaceAppearance"):Destroy() end
+machete.Model.TZB_Machete.MeshId = "rbxassetid://574565541"
+machete.Model.TZB_Machete.TextureID = "rbxassetid://574565718"
+machete.Model.TZB_Machete.Size = Vector3.new(0.163, 5, 0.7)
+
+    end,
+})
+local Button = Tab:CreateButton({
+	Name = "Crowbar: SledgeHammer Skin",
+	Callback = function()
+---MACHETE SKIN FOR KE---
+
+local machete = game.Players.LocalPlayer.Character:WaitForChild("Sledge Hammer")
+machete.Model.BasePart.Swing.Volume = 3
+if machete.Model.TZB_Sledgehammer:FindFirstChild("SurfaceAppearance") then machete.Model.TZB_Sledgehammer:WaitForChild("SurfaceAppearance"):Destroy() end
+machete.Model.TZB_Sledgehammer.MeshId = "rbxassetid://10503048621"
+machete.Model.TZB_Sledgehammer.TextureID = "rbxassetid://10503048710"
+machete.Model.TZB_Sledgehammer.Size = Vector3.new(0.03, 0.5, 0.08)
+machete.Model.BasePart.Hit.SoundId = "rbxassetid://5697934234"
+machete.Model.BasePart.Hit.TimePosition = 0
+machete.Model.BasePart.Hit.Volume = 7
+machete.Model.BasePart.Hit.RollOffMaxDistance = 100
+machete.Model.BasePart.Hit.RollOffMinDistance = 10
+machete.Model.BasePart.Swing.SoundId = "rbxassetid://2156366946"
+
+    end,
+})
+local Button = Tab:CreateButton({
+	Name = "Orinthian Electroslasher: Machete Skin",
+	Callback = function()
+---MACHETE SKIN FOR KE---
+
+local machete = game.Players.LocalPlayer.Character:WaitForChild("Machete")
+
+if machete.Model.TZB_Machete:FindFirstChild("SurfaceAppearance") then machete.Model.TZB_Machete:WaitForChild("SurfaceAppearance"):Destroy() end
+machete.Model.BasePart.Hit.SoundId = "rbxassetid://9116272906"
+machete.Model.BasePart.Swing.SoundId = "rbxassetid://5758898708"
+machete.Model.BasePart.Swing.Volume = 3
+machete.Model.TZB_Machete.MeshId = "http://www.roblox.com/asset/?id=283709822"
+machete.Model.TZB_Machete.TextureID = "http://www.roblox.com/asset/?id=283709867"
+machete.Model.TZB_Machete.Size = Vector3.new(0.1, 2, 0.3)
+    end,
+})
+local Button = Tab:CreateButton({
+	Name = "Knife: Machete Skin",
+	Callback = function()
+---MACHETE SKIN FOR KE---
+
+local machete = game.Players.LocalPlayer.Character:WaitForChild("Machete")
+
+if machete.Model.TZB_Machete:FindFirstChild("SurfaceAppearance") then machete.Model.TZB_Machete:WaitForChild("SurfaceAppearance"):Destroy() end
+machete.Model.BasePart.Hit.SoundId = "rbxassetid://4471648128"
+machete.Model.BasePart.Swing.SoundId = "rbxassetid://5792087636"
+machete.Model.BasePart.Swing.Volume = 1
+machete.Model.TZB_Machete.MeshId = "http://www.roblox.com/asset/?id=121944778"
+machete.Model.TZB_Machete.TextureID = "http://www.roblox.com/asset/?id=121944805"
+machete.Model.TZB_Machete.Size = Vector3.new(0.15, 5, 0.5)
+    end,
+})
+local Button = Tab:CreateButton({
+	Name = "LEGOON: Crucible Skin",
+	Callback = function()
+	local sound = Instance.new("Sound")
+	sound.Parent = game.Players.LocalPlayer.Character.Crucible.Model.blade1
+	sound.Playing = true
+	sound.Looped = true
+	sound.RollOffMaxDistance = 100
+	sound.SoundId = "rbxassetid://1845756489"
+	sound.PlaybackSpeed = 1.2
+	sound.Volume = 1
+	sound.RollOffMinDistance = 5
+		game.Players.LocalPlayer.Character.Crucible.Model.blade1.Color = Color3.fromRGB(11, 255, 0)
+game.Players.LocalPlayer.Character.Crucible.Model.blade2.Color = Color3.fromRGB(11, 255, 0)
+game.Players.LocalPlayer.Character.Crucible.Model.crystal.Color = Color3.fromRGB(11, 255, 0)
+game.Players.LocalPlayer.Character.Crucible.Model.symbol.Color = Color3.fromRGB(11, 255, 0)
+game.Players.LocalPlayer.Character.Crucible.Model.body3.Color = Color3.fromRGB(11, 255, 0)
+game.Players.LocalPlayer.Character.Crucible.Model.Particles.BaseBlade.PointLight.Color = Color3.fromRGB(11, 255, 0)
+game.Players.LocalPlayer.Character.Crucible.Model.Particles.BaseBlade.Attachment.PointLight.Color = Color3.fromRGB(11, 255, 0)
+    end,
+})
+local Button = Tab:CreateButton({
+	Name = "LEFOON: Crucible Skin",
+	Callback = function()
+		game.Players.LocalPlayer.Character.Crucible.Model.blade1.Color = Color3.fromRGB(255, 205, 0)
+game.Players.LocalPlayer.Character.Crucible.Model.blade2.Color = Color3.fromRGB(255, 205, 0)
+game.Players.LocalPlayer.Character.Crucible.Model.crystal.Color = Color3.fromRGB(255, 205, 0)
+game.Players.LocalPlayer.Character.Crucible.Model.symbol.Color = Color3.fromRGB(255, 205, 0)
+game.Players.LocalPlayer.Character.Crucible.Model.body3.Color = Color3.fromRGB(255, 205, 0)
+game.Players.LocalPlayer.Character.Crucible.Model.Particles.BaseBlade.PointLight.Color = Color3.fromRGB(255, 205, 0)
+game.Players.LocalPlayer.Character.Crucible.Model.Particles.BaseBlade.Attachment.PointLight.Color = Color3.fromRGB(255, 205, 0)
+    end,
+})
