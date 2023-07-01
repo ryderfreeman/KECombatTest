@@ -265,6 +265,7 @@ button.MouseButton1Click:Connect(function()
 		gui:Destroy()
 		sound1:Destroy()
 		game.Workspace:WaitForChild("Ambient").EventTheme.NotEnoughTime:Play()
+game.Workspace:WaitForChild("Ambient").EventTheme.NotEnoughTime.Volume = 1.2
 		game.Workspace:WaitForChild("Ambient").EventTheme.NotEnoughTime.Looped = false
 		for i,lights in pairs(game.Workspace:WaitForChild("Map"):GetDescendants()) do
 			if lights:IsA("PointLight") then
