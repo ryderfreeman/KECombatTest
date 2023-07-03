@@ -59,13 +59,13 @@ local Toggle = Tab:CreateToggle({
 	CurrentValue = false,
 	Flag = "esp1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Value)
-		local hl
 		while wait(1) do
-		for i,v in pairs(workspace:GetDescendants()) do
-			if v.Name == "Medical Crate" then
+		local hl
+		for i,v in pairs(workspace:GetChildren()) do
+			if v.Name == "Crate" then
 				hl = Instance.new("Highlight")
-				hl.Adornee = v
-				hl.Parent = v
+				hl.Adornee = v["Medical Crate"]
+				hl.Parent = v["Medical Crate"]
 				hl.OutlineColor =  Color3.fromRGB(255, 94, 0)
 				hl.OutlineTransparency = 0
 				hl.FillColor =  Color3.fromRGB(255, 94, 0)
