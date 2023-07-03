@@ -59,7 +59,7 @@ local Toggle = Tab:CreateToggle({
 	CurrentValue = false,
 	Flag = "esp1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
 	Callback = function(Value)
-		while wait(5) do
+		
 		local hl
 		for i,v in pairs(workspace:GetChildren()) do
 			if v.Name == "Crate" then
@@ -73,7 +73,7 @@ local Toggle = Tab:CreateToggle({
 				hl.Enabled = Value
 			end
 		end
-	end
+	
 	end,
  })
 local Button = Tab:CreateButton({
