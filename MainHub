@@ -3,7 +3,7 @@ local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shle
 local Window = Rayfield:CreateWindow({
 	Name = "stupid KE exploit",
 	LoadingTitle = "stupid KE exploit",
-	LoadingSubtitle = "made by me",
+	LoadingSubtitle = "made by me [NOT YOU]",
 	ConfigurationSaving = {
 		Enabled = false,
 		FolderName = nil, -- Create a custom folder for your hub/game
@@ -34,7 +34,7 @@ local Tab = Window:CreateTab("main", 10590477450)
 local Button = Tab:CreateButton({
 	Name = "infstamina",
 	Callback = function()
-		while wait(0.06) do
+		while wait(0.4) do
 		game.Players.LocalPlayer.Character.Stats.Stamina.Value = 100
 		end
     end,
@@ -45,27 +45,53 @@ local Button = Tab:CreateButton({
 
     end,
 })
+local Toggle = Tab:CreateToggle({
+	Name = "Medical Crate ESP [CLIENT]",
+	CurrentValue = false,
+	Flag = "esp1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		local hl
+		for i,v in pairs(workspace:GetDescendants()) do
+			if v.Name == "Medical Crate" then
+				hl = Instance.new("Highlight")
+				hl.Adornee = v
+				hl.Parent = v
+				hl.OutlineColor =  Color3.fromRGB(255, 94, 0)
+				hl.OutlineTransparency = 0
+				hl.FillColor =  Color3.fromRGB(255, 94, 0)
+				hl.FillTransparency = 0.4
+				hl.Enabled = Value
+			end
+		end
+	end,
+ })
 local Button = Tab:CreateButton({
-	Name = "infyield",
+	Name = "infyield [CLIENT]",
 	Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
     end,
 })
 local Button = Tab:CreateButton({
-	Name = "remove water hitbox",
+	Name = "remove water hitbox [CLIENT]",
 	Callback = function()
 workspace["UNCODED Water Hitbox"].MediumWater:Destroy()
     end,
 })
 local Button = Tab:CreateButton({
-	Name = "Destroy Nametag",
+	Name = "Destroy Sharks [CLIENT]",
+	Callback = function()
+workspace.Scripted:WaitForChild("TransformBrick"):Destroy()
+    end,
+})
+local Button = Tab:CreateButton({
+	Name = "Destroy Nametag [CLIENT]",
 	Callback = function()
 -- Destroys Your nametag in KE (Client Sided)
 game.Players.LocalPlayer.Character.Head:WaitForChild("NameTag"):Destroy()
     end,
 })
 local Button = Tab:CreateButton({
-	Name = "Template Char [For Hiding your avatar.]",
+	Name = "Template Char [For Hiding your avatar.] [CLIENT]",
 	Callback = function()
 for i,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
 if v:IsA("Accessory")
@@ -85,7 +111,7 @@ game.Players.LocalPlayer.Character.Torso.Color = Color3.fromRGB(115, 115, 115)
     end,
 })
 local Button = Tab:CreateButton({
-	Name = "Banana Cat Cursor",
+	Name = "Banana Cat Cursor [CLIENT]",
 	Callback = function()
 local cursor = Instance.new("ImageLabel")
 local cursorgui = game.Players.LocalPlayer.PlayerGui:WaitForChild("CURSOR")
@@ -104,7 +130,7 @@ cursorgui.ToolCursor.Size = UDim2.new(0.1, 0, 0.1, 0)
     end,
 })
 local Button = Tab:CreateButton({
-	Name = "purification",
+	Name = "purification [CLIENT]",
 	Callback = function()
 
 
@@ -201,38 +227,11 @@ local oldplayerpos = plrchar.HumanoidRootPart.Position
 
    end,
 })
-local Keybind = Tab:CreateKeybind({
-	Name = "sledge queen but goes to mouse",
-	CurrentKeybind = "V",
-	HoldToInteract = false,
-	Flag = "SQKB2", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-	Callback = function(SQKey2)
-if cooldown == false then
-    cooldown = true
-local lp = game.Players.LocalPlayer
-local gui = lp.PlayerGui
-local rs = game.ReplicatedStorage
-local ms = lp:GetMouse()
-wait(0.1)
-local hitpos = ms.hit.Position
-wait(0.3)
-game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(0,100,0)
-wait(0.4)
-local bp = Instance.new("BodyPosition",game:GetService("Players").LocalPlayer.Character.HumanoidRootPart)
-bp.MaxForce = Vector3.new(10000000,10000000,10000000)
-bp.P = 50
-bp.D = 0
-bp.Position = hitpos
-wait(0.4)
-bp:Destroy()
-wait(0.4)
-cooldown = false
-end
-	end,
- })
+
  
  local Tab = Window:CreateTab("cosmetic/skins", 10590477450)
  
+ local Section = Tab:CreateSection("ALL OF THESE ARE CLIENT SIDED!")
  local Button = Tab:CreateButton({
 	Name = "Blade of the Dusekkar: Machete Skin",
 	Callback = function()
